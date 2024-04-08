@@ -1,18 +1,18 @@
 from flask_restful import Resource, reqparse
 import sqlite3
 
-class SearchResource(Resource):
+class UserResource(Resource):
     def post(self):
         parser = reqparse.RequestParser()
-        parser.add_argument('search', required=True, help='Search term is required')
+        parser.add_argument('username', required=True, help='User is required')
         args = parser.parse_args()
 
-        search_term = args['search']
+        username = args['username']
         conn = sqlite3.connect('example.db')
         c = conn.cursor()
 
         # Unsanitized query for demonstration purposes
-        query = ("SELECT * FROM users WHERE username=" + "'" + search_term + "';")
+        query = ("SELECT * FROM users WHERE username='" + username + "';")
         print(query)
         c.execute(query)
         result = c.fetchone()
