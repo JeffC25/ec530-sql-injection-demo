@@ -12,9 +12,28 @@ class SearchResource(Resource):
         c = conn.cursor()
 
         # Unsanitized query for demonstration purposes
-        c.executescript("SELECT * FROM products WHERE name LIKE" + " '" + search_term + "';")
-        results = c.fetchall()
+        query = ("SELECT * FROM users WHERE name LIKE" + " '" + search_term + "';")
+        print(query)
+        c.execute(query)
+        result = c.fetchone()
+        print('')
+        print(result)
         conn.close()
 
-        products = [{'id': row[0], 'name': row[1], 'price': row[2]} for row in results]
-        return products
+        # id,username,name,birthday,secret,occupation,email,address,favorite_color,sleep_hours_per_night,exercise_hours_per_week,savings_amount,total_tacos_eaten
+        user = [{
+            'id': result[0],
+            'username': result[1],
+            'name': result[2],
+            'birthday': result[3],
+            'secret': result[4],
+            'occupation': result[5],
+            'email': result[6],
+            'address': result[7],
+            'favorite_color': result[8],
+            'sleep_hours_per_night': result[9],
+            'exercise_hours_per_week': result[10],
+            'savings_amount': result[11],
+            'total_tacos_eaten': result[12]
+        }]
+        return user

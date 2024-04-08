@@ -2,8 +2,9 @@
 <html>
 <head>
     <title>SQLite Demo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        function searchProducts() {
+        function getUser() {
             var searchTerm = document.getElementById("searchInput").value;
             fetch("/api/search", {
                 method: "POST",
@@ -14,15 +15,24 @@
             })
             .then(response => response.json())
             .then(data => {
-                var resultsTableBody = document.getElementById("resultsTableBody");
-                resultsTableBody.innerHTML = "";
-                data.forEach(product => {
-                    resultsTableBody.innerHTML += `
-                        <tr>
-                            <td>${product.id}</td>
-                            <td>${product.name}</td>
-                            <td>${product.price}</td>
-                        </tr>
+                var results = document.getElementById("results");
+                results.innerHTML = "";
+                data.forEach(user => {
+                    results.innerHTML += `
+                        <div>
+                            <div>${user.name}</div>
+                            <div>${user.username}</div>
+                            <div>${user.birthday}</div>
+                            <div>${user.secret}</div>
+                            <div>${user.occupation}</div>
+                            <div>${user.email}</div>
+                            <div>${user.address}</div>
+                            <div>${user.favorite_color}</div>
+                            <div>${user.sleep_hours_per_night}</div>
+                            <div>${user.exercise_hours_per_week}</div>
+                            <div>${user.savings_amount}</div>
+                            <div>${user.total_tacos_eaten}</div>
+                        </div>
                     `;
                 });
             });
@@ -30,20 +40,31 @@
     </script>
 </head>
 <body>
-    <h1>Search for Products</h1>
-    <input type="text" id="searchInput" placeholder="Search for a product">
-    <button onclick="searchProducts()">Search</button>
+    <h1>Search for users</h1>
+    <input type="text" id="searchInput" placeholder="Search for a user">
+    <button onclick="getUser()">Search</button>
     <h2>Results:</h2>
     <table>
         <thead>
+            <!-- id,username,name,birthday,secret,occupation,email,address,favorite_color,sleep_hours_per_night,exercise_hours_per_week,savings_amount,total_tacos_eaten -->
             <tr>
                 <th>ID</th>
+                <th>Username</th>
                 <th>Name</th>
-                <th>Price</th>
+                <th>Birthday</th>
+                <th>Secret</th>
+                <th>Occupation</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>Favorite Color</th>
+                <th>Sleep Hours Per Night</th>
+                <th>Exercise Hours Per Week</th>
+                <th>Savings Amount</th>
+                <th>Total Tacos Eaten</th>
             </tr>
         </thead>
-        <tbody id="resultsTableBody">
-        </tbody>
+        <div id="results">
+        </div>
     </table>
 </body>
 </html>

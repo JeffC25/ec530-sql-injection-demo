@@ -1,8 +1,44 @@
-id,name,price
-1,lamp,9.99
-2,cooler lamp,14.99
-3,watch,19.99
-4,chair,79.99
-5,frige,129.99
-6,ipad,699.99
-7,cooler,19.99
+id,username,name,birthday,secret,occupation,email,address,favorite_color,sleep_hours_per_night,exercise_hours_per_week,savings_amount,total_tacos_eaten
+1,user123,John Doe,1990-05-15,I believe that unicorns are real and they're hiding from us.,Software Engineer,johndoe@example.com,123 Main St,Blue,7,5,5000,100
+2,coolgirl22,Alice Smith,1985-10-22,I once accidentally dyed my hair green instead of blonde and pretended it was intentional.,Data Analyst,alice.smith@email.com,456 Elm St,Green,6,3,8000,50
+3,superman7,Clark Kent,1978-07-04,My pet goldfish is plotting to take over the world.,Journalist,clarkkent@dailyplanet.com,789 Oak St,Red,8,4,10000,200
+4,bookworm99,Jane Doe,1988-12-30,I have a secret stash of candy hidden under my bed.,Librarian,janedoe@example.com,101 Maple Ave,Yellow,8,2,3000,75
+5,techguru2000,Peter Parker,1995-08-10,I've convinced my little sister that I have superpowers and she believes me.,Photographer,peterparker@dailybugle.com,246 Pine St,Black,6,6,7000,150
+6,codingwizard78,Bob Johnson,1982-03-18,I've been secretly practicing my evil laugh in front of the mirror.,Software Developer,bobjohnson@example.com,369 Birch St,Blue,7,4,6000,120
+7,musiclover101,Sarah Williams,1993-06-25,I used to sneak into my neighbor's yard to play with their pet rabbit.,Music Teacher,sarahw@email.com,579 Cedar St,Purple,8,3,9000,100
+8,sportyjoe22,Joseph Ramirez,1989-09-07,I've convinced my friends that I'm a time traveler from the future.,Personal Trainer,jramirez@fitness.com,789 Maple Ave,Green,7,10,12000,300
+9,artisticmind45,Emily Turner,1987-04-12,I have a secret talent for impersonating famous celebrities.,Painter,emily.turner@example.com,123 Oak St,Blue,8,2,5000,80
+10,sciencegeek99,David Lee,1998-01-29,I once put salt in the sugar jar just to see my mom's reaction.,Research Scientist,dlee@sciencelab.com,456 Pine St,Red,7,4,7000,150
+11,travelbug2001,Lisa Garcia,1980-11-17,I've been practicing my ninja skills in the backyard when no one's watching.,Travel Blogger,lisagarcia@example.com,789 Birch St,Green,7,5,10000,200
+12,foodiequeen,Samantha Clark,1984-08-05,I've convinced my dog that I can speak fluent dog language.,Food Critic,samclark@email.com,101 Elm St,Yellow,8,3,8000,90
+13,bookworm77,Michael Taylor,1975-02-03,I've been trying to teach my cat to do tricks, but he's not interested.,English Teacher,michaeltaylor@example.com,246 Cedar St,Blue,7,2,6000,70
+14,animallover2000,Amy Roberts,1991-12-19,I believe that plants can communicate with each other.,Veterinarian,amy.roberts@email.com,369 Maple Ave,Green,8,4,9000,100
+15,historybuff88,William Brown,1986-07-09,I'm convinced that my neighbor's garden gnome comes to life at night.,History Professor,wbrown@example.com,579 Pine St,Red,8,3,11000,250
+16,outdoorsman22,Steven Wilson,1979-04-27,I've convinced my little brother that I can control the weather.,Adventure Guide,stevenw@email.com,123 Cedar St,Brown,7,8,13000,350
+17,fitnessfreak2000,Maria Lopez,1990-03-14,I once pretended to be a ghost to scare my friends during a camping trip.,Physical Therapist,mlopez@rehab.com,456 Oak St,Blue,8,10,15000,400
+18,techsavvy123,Kevin Nguyen,1994-10-01,I've convinced my parents that I'm a secret agent on a top-secret mission.,IT Specialist,knguyen@example.com,789 Elm St,Black,7,6,7000,180
+19,moviebuff99,Daniel Martin,1983-05-28,I'm convinced that my cat is plotting to take over the world.,Movie Critic,dmartin@email.com,101 Cedar St,Red,8,2,8000,90
+20,globetrotter007,Alexandra White,1988-02-15,I've been practicing my ninja moves in the garage when nobody's home.,Travel Writer,awhite@example.com,246 Elm St,Blue,7,4,12000,300
+21,healthnut22,Jennifer Adams,1981-09-23,I have a secret potion recipe that I believe can make me invisible.,Health Coach,jadams@example.com,369 Oak St,Green,8,6,9000,200
+22,craftycreator,Sophia Hernandez,1996-06-07,I've convinced my friends that I have a secret underground lair.,Artist,sophiah@email.com,579 Birch St,Orange,8,3,7000,150
+23,languageexpert77,Matthew Davis,1976-01-11,I believe that my stuffed animals come to life when I'm not looking.,Translator,mdavis@example.com,123 Pine St,Yellow,7,2,10000,100
+24,adrenalinejunkie123,Ethan Martinez,1992-11-05,I've convinced my little sister that I have X-ray vision.,Extreme Sports Enthusiast,ethanm@example.com,456 Cedar St,Blue,8,8,8000,200
+25,yogalover88,Olivia Wilson,1989-08-30,I'm convinced that my cat is secretly a master yoga instructor.,Yoga Instructor,oliviaw@email.com,789 Maple Ave,Green,8,5,11000,250
+26,coffeelover42,Nathan Thompson,1980-04-16,I believe that my house is haunted by a friendly ghost.,Barista,nthompson@example.com,101 Elm St,Black,7,2,6000,80
+27,sciencefictionfan,Taylor Lewis,1987-12-01,I once pretended to be an alien to scare my little brother.,Sci-Fi Writer,taylorlewis@email.com,246 Pine St,Red,8,3,9000,100
+28,greenthumb45,Isabella Clark,1995-02-18,I've convinced my friends that I can talk to plants and they respond.,Botanist,iclark@example.com,369 Oak St,Green,8,4,10000,150
+29,photographyenthusiast,Andrew Rodriguez,1984-10-07,I'm convinced that my camera has a mind of its own and takes photos on its own.,Photographer,arodriguez@email.com,579 Maple Ave,Blue,7,6,12000,200
+30,musicproducer2020,Nicholas Wright,1993-07-29,I've convinced my friends that I can read minds.,Music Producer,nwright@example.com,123 Elm St,Red,8,10,14000,350
+31,animalrightsactivist,Grace Anderson,1982-03-25,I'm convinced that my dog is secretly a genius and understands everything I say.,Activist,graceanderson@example.com,456 Pine St,Green,8,8,8000,180
+32,volunteerextraordinaire,Joshua Scott,1977-09-14,I believe that my cat is secretly planning a world domination plot.,Community Organizer,jscott@example.com,789 Cedar St,Blue,7,5,11000,250
+33,architecturelover,Ava Hall,1990-06-11,I'm convinced that my neighbor is secretly an alien spy.,Architect,avahall@example.com,101 Oak St,Orange,8,3,9000,100
+34,culinarygenius,Liam Baker,1988-01-07,I've convinced my friends that I have a secret recipe for invisibility.,Head Chef,liambaker@example.com,246 Birch St,Red,8,5,10000,200
+35,historyteacher101,Emma King,1983-08-23,I've convinced my little brother that I'm a time traveler from the past.,History Teacher,emmaking@example.com,369 Pine St,Green,8,2,12000,150
+36,techenthusiast1990,Noah Perez,1996-05-19,I've convinced my friends that I have a secret lab in my basement.,Software Developer,nperez@example.com,579 Elm St,Blue,7,6,13000,300
+37,fitnesscoach2022,Sophie Moore,1985-11-09,I'm convinced that my cat is secretly training to be a ninja.,Personal Trainer,smoore@example.com,123 Cedar St,Green,8,8,15000,350
+38,wildlifephotographer,Leo Rivera,1989-02-28,I've convinced my little sister that I have a secret portal to another dimension.,Wildlife Photographer,lrivera@example.com,456 Maple Ave,Blue,7,3,10000,120
+39,travelphotographer2023,Hannah Carter,1987-07-16,I believe that my pet hamster is secretly plotting to take over the world.,Travel Photographer,hcarter@example.com,789 Elm St,Red,8,5,14000,200
+40,animalbehaviorist,Jacob Ward,1980-12-03,I'm convinced that my dog is secretly a famous celebrity in disguise.,Animal Behaviorist,jward@example.com,101 Oak St,Green,8,4,9000,180
+41,r0vert,trevdawg,2002-08-14,insert AWS access key here,Unemployed,notrealemail@gmail.com,44 Baller Lane,Turquoise,24,-2,5,7842
+42,TimoTheWitch,Fernand Francur,2002-13-37,murder?,RockClimber,CakeIsALie@hotmail.org,123 Street St,Carmine,8,112,12345,0
+43,JeffC25,Jeff Chen,2002-06-25,I once ate a McDonalds Cheeseburger in a single bite,Student,jeff@yerf.dev,Lime Green,33 Wombat Rd,8,7,12,2500
