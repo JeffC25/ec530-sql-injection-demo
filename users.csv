@@ -1,4 +1,5 @@
 username,name,birthday,secret,occupation,email,address,favorite_color,sleep_hours_per_night,exercise_hours_per_week,savings_amount,total_tacos_eaten
+jimothytimothy,Jimmy Tim,1995-05-12,I don't like eating fish.,DevOps Engineer,jimmytimmy123@example.com,321 Main Ave,Orange,7,7,2340,80
 user123,John Doe,1990-05-15,I believe that unicorns are real and they're hiding from us.,Software Engineer,johndoe@example.com,123 Main St,Blue,7,5,5000,100
 coolgirl22,Alice Smith,1985-10-22,I once accidentally dyed my hair green instead of blonde and pretended it was intentional.,Data Analyst,alice.smith@email.com,456 Elm St,Green,6,3,8000,50
 superman7,Clark Kent,1978-07-04,My pet goldfish is plotting to take over the world.,Journalist,clarkkent@dailyplanet.com,789 Oak St,Red,8,4,10000,200
@@ -14,7 +15,7 @@ foodiequeen,Samantha Clark,1984-08-05,I don't have a sense of taste.,Food Critic
 bookworm77,Michael Taylor,1975-02-03,I like turtles.,English Teacher,michaeltaylor@example.com,246 Cedar St,Blue,7,2,6000,70
 animallover2000,Amy Roberts,1991-12-19,I have a secret lab.,Veterinarian,amy.roberts@email.com,369 Maple Ave,Red,8,4,9000,100
 historybuff88,William Brown,1986-07-09,I have a fear of heights.,History Professor,wbrown@example.com,579 Pine St,Red,8,3,11000,250
-outdoorsman22,Steven Wilson,1979-04-27,I've convinced my little brother that I can control the weather.,Adventure Guide,stevenw@email.com,123 Cedar St,Brown,7,8,13000,350
+outdoorsman22,Steven Wilson,1979-04-27,I have a fear of fish.,Adventure Guide,stevenw@email.com,123 Cedar St,Brown,7,8,13000,350
 fitnessfreak2000,Maria Lopez,1990-03-14,I once pretended to be a ghost to scare my friends during a camping trip.,Physical Therapist,mlopez@rehab.com,456 Oak St,Blue,8,10,15000,400
 techsavvy123,Kevin Nguyen,1994-10-01,I've convinced my parents that I'm a secret agent on a top-secret mission.,IT Specialist,knguyen@example.com,789 Elm St,Black,7,6,7000,180
 moviebuff99,Daniel Martin,1983-05-28,I'm convinced my friends that I have a secret lab.,Movie Critic,dmartin@email.com,101 Cedar St,Red,8,2,8000,90
