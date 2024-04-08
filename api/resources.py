@@ -12,7 +12,7 @@ class SearchResource(Resource):
         c = conn.cursor()
 
         # Unsanitized query for demonstration purposes
-        query = ("SELECT * FROM users WHERE name=" + "'" + search_term + "';")
+        query = ("SELECT * FROM users WHERE username=" + "'" + search_term + "';")
         print(query)
         c.execute(query)
         result = c.fetchone()
@@ -20,7 +20,9 @@ class SearchResource(Resource):
         print(result)
         conn.close()
 
-        # id,username,name,birthday,secret,occupation,email,address,favorite_color,sleep_hours_per_night,exercise_hours_per_week,savings_amount,total_tacos_eaten
+        if result is None:
+            return {'error': 'User not found'}, 404
+
         user = [{
             'id': result[0],
             'username': result[1],
