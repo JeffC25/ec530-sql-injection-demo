@@ -7,10 +7,12 @@ class SearchResource(Resource):
         parser.add_argument('search', required=True, help='Search term is required')
         args = parser.parse_args()
 
-        search_term = "%" + args['search'] + "%"
+        search_term = args['search']
         conn = sqlite3.connect('example.db')
         c = conn.cursor()
-        c.execute(f"SELECT * FROM products WHERE name LIKE '{search_term}'")
+
+        # Unsanitized query for demonstration purposes
+        c.executescript("SELECT * FROM products WHERE name LIKE" + " '" + search_term + "';")
         results = c.fetchall()
         conn.close()
 
