@@ -10,3 +10,6 @@ env.bak/
 venv.bak/
 
 .db
+example.db
+**.db
+**.sqlite3
