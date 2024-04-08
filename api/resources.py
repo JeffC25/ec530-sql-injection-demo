@@ -12,7 +12,7 @@ class SearchResource(Resource):
         c = conn.cursor()
 
         # Unsanitized query for demonstration purposes
-        query = ("SELECT * FROM users WHERE name LIKE" + " '" + search_term + "';")
+        query = ("SELECT * FROM users WHERE name=" + "'" + search_term + "';")
         print(query)
         c.execute(query)
         result = c.fetchone()
