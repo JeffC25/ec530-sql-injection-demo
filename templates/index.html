@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SQLite Demo</title>
+    <script>
+        function searchProducts() {
+            var searchTerm = document.getElementById("searchInput").value;
+            fetch("/api/search", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ search: searchTerm })
+            })
+            .then(response => response.json())
+            .then(data => {
+                var resultsTableBody = document.getElementById("resultsTableBody");
+                resultsTableBody.innerHTML = "";
+                data.forEach(product => {
+                    resultsTableBody.innerHTML += `
+                        <tr>
+                            <td>${product.id}</td>
+                            <td>${product.name}</td>
+                            <td>${product.price}</td>
+                        </tr>
+                    `;
+                });
+            });
+        }
+    </script>
+</head>
+<body>
+    <h1>Search for Products</h1>
+    <input type="text" id="searchInput" placeholder="Search for a product">
+    <button onclick="searchProducts()">Search</button>
+    <h2>Results:</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody id="resultsTableBody">
+        </tbody>
+    </table>
+</body>
+</html>
