@@ -5,8 +5,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         function getUser() {
-            const username = 'user123'; // Pretend this is the username of the currently logged in user
-            //let searchTerm = document.getElementById("searchInput").value;
+            // Don't question why the username is grabbed this way...
+            let username = document.getElementById("username").innerHTML;
             fetch("/api/user", {
                 method: "POST",
                 headers: {
@@ -43,13 +43,14 @@
 </head>
 <body>
     <h1>Search for users</h1>
-    <input type="text" id="searchInput" placeholder="Search for a user">
+    <h2>Logged in as: 
+        <span id="username">user123</span>
+    </h2>
     <button onclick="getUser()">Search</button>
     <h2>Results:</h2>
     <table>
         <thead>
-            <!-- id,username,name,birthday,secret,occupation,email,address,favorite_color,sleep_hours_per_night,exercise_hours_per_week,savings_amount,total_tacos_eaten -->
-            <tr>
+            <div>
                 <th>ID</th>
                 <th>Username</th>
                 <th>Name</th>

@@ -12,7 +12,7 @@ c = conn.cursor()
 c.execute('''DROP TABLE IF EXISTS users''')
 c.execute('''CREATE TABLE IF NOT EXISTS users (
              id INTEGER PRIMARY KEY AUTOINCREMENT,
-             username TEXT,
+             username TEXT UNIQUE NOT NULL,
              name TEXT,
              birthday TEXT,
              secret TEXT,
