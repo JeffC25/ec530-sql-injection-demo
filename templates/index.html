@@ -13,6 +13,7 @@
                 body: JSON.stringify({ username: username })
             })
             .then(response => {
+                results.innerHTML = `<div class="p-1 text-center text-orange-500">Fetching user data...</div>`;
                 if (response.status == 404) {
                     throw new Error("Failed to fetch user data");
                 }
