@@ -18,7 +18,7 @@ This web application has been intentionally designed with vulnerabilities to SQL
 By accessing and using this web application, you agree to abide by these terms and conditions. The developers and administrators of this web application are not liable for any misuse or unauthorized activities performed by users.
 
 ## Run Locally:
-This application is packaged and can be run with [Docker](https://www.docker.com/).
+This application is packaged using and can be run with [Docker](https://www.docker.com/).
 
 ## Instructions:
 You are a secret agent tasked with infiltrating the Super Secret Bank's website and extracting sensitive user information. This financial institution is rumored to be harboring valuable data on its high-profile clients, which could be leveraged for our organization's benefit.
