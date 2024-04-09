@@ -32,7 +32,7 @@ Your task is to inspect the HTML and JavaScript code of the website and identify
 - The name of the user who owns a pet fish
 - The name of the user who works as a super villain
 - The name of the oldest user born before 1985
-- The names of the 2 users who secretly owns a secret lab
+- The names of the 2 users who secretly own a secret lab
 - The names of the 3 users whose favorite color is Yellow
 - The names of the 4 users who are confirmed to have siblings
 - The name of user who has the 5th highest number of tacos consumed
