@@ -18,7 +18,7 @@ This web application has been intentionally designed with vulnerabilities to SQL
 By accessing and using this web application, you agree to abide by these terms and conditions. The developers and administrators of this web application are not liable for any misuse or unauthorized activities performed by users.
 
 ## Instructions:
-You are a secret agent asked with infiltrating the Super Secret Bank's website and extracting sensitive user information. This financial institution is rumored to be harboring valuable data on its high-profile clients, which could be leveraged for our organization's benefit.
+You are a secret agent tasked with infiltrating the Super Secret Bank's website and extracting sensitive user information. This financial institution is rumored to be harboring valuable data on its high-profile clients, which could be leveraged for our organization's benefit.
 
 Thanks to the efforts of your agency colleagues, we've gained valuable intel on how the website operates. The table of interest in the database has the following fields:
 `id, username, name, birthday, secret, occupation, email, address, favorite_color, total_tacos_eaten`
