@@ -1,4 +1,5 @@
 # SQL Injection Demo
+Excercise can be accessed [here](https://sql-demo.yerf.dev/).
 
 #### Disclaimer
 This web application has been intentionally designed with vulnerabilities to SQL injection for educational purposes only. It is intended to be used as a demonstration tool to understand the risks and potential consequences associated with SQL injection attacks.
