@@ -18,6 +18,7 @@ class UserResource(Resource):
             result = c.fetchone()
         conn.close()
 
+        # user not found
         if result is None:
             return {'error': 'User not found'}, 404
 
