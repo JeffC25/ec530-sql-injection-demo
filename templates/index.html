@@ -5,15 +5,20 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         function getUser() {
-            let username = document.getElementById("username").innerHTML; // Don't question why the username is grabbed this way...
+            let results = document.getElementById("results");
+            let username = document.getElementById("username").textContent; // Don't question why the username is grabbed this way...
             fetch("/api/user", {
                 method: "POST",
                 headers: {"Content-Type": "application/json"},
                 body: JSON.stringify({ username: username })
             })
-            .then(response => response.json())
+            .then(response => {
+                if (response.status == 404) {
+                    throw new Error("Failed to fetch user data");
+                }
+                return response.json();
+            })
             .then(data => {
-                let results = document.getElementById("results");
                 results.innerHTML = `
                     <div class="p-1">
                         <div class="text-orange-500 text-sm">ID</div>
@@ -65,6 +70,8 @@
                         <div class="text-neutral-800 ">${data.total_tacos_eaten}</div>
                     </div>
                 `;
+            }).catch(error => {
+                results.innerHTML = `<div class="p-1 text-center text-red-500">Error fetching user data</div>`;
             });
         }
     </script>
