@@ -11,8 +11,8 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the application code to the working directory
-COPY ./api/** .
-COPY ./templates/** .
+COPY ./api/** ./api/
+COPY ./templates/** ./templates/
 COPY ./app.py .
 COPY ./users.csv .
 
