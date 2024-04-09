@@ -1,5 +1,6 @@
 # SQL Injection Demo
-Excercise can be accessed [here](https://sql-demo.yerf.dev/).
+
+This is an project has been created as an in-class exercise for the EC530 course in the department of Electrical and Computer Engineering at Boston University. The excercise can be accessed [here](https://sql-demo.yerf.dev/).
 
 #### Disclaimer
 This web application has been intentionally designed with vulnerabilities to SQL injection for educational purposes only. It is intended to be used as a demonstration tool to understand the risks and potential consequences associated with SQL injection attacks.
