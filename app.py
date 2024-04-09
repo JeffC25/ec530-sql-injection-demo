@@ -1,4 +1,4 @@
-from flask import Flask, send_file
+from flask import Flask, render_template
 from api import api
 
 app = Flask(__name__, template_folder='templates', static_folder='static')
@@ -6,7 +6,7 @@ app.register_blueprint(api, url_prefix='/api')
 
 @app.route('/')
 def index():
-    return send_file('templates/index.html')
+    return render_template('index.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
