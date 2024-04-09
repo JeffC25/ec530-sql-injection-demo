@@ -59,7 +59,7 @@ function getUser() {
                 <div class="text-orange-500 text-sm">Favorite Color</div>
                 <div class="text-neutral-800 ">${data.favorite_color}</div>
             </div>
-            <div class="h-px b-pxeutral-300 w-full"></div>
+            <div class="h-px bg-neutral-300 w-full"></div>
             <div class="p-1">
                 <div class="text-orange-500 text-sm">Tacos Eaten in Lifetime</div>
                 <div class="text-neutral-800 ">${data.total_tacos_eaten}</div>
