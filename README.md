@@ -18,14 +18,14 @@ This web application has been intentionally designed with vulnerabilities to SQL
 By accessing and using this web application, you agree to abide by these terms and conditions. The developers and administrators of this web application are not liable for any misuse or unauthorized activities performed by users.
 
 ## Run Locally:
-This application is packaged with [Docker](https://www.docker.com/).
+This application is packaged and can be run with [Docker](https://www.docker.com/).
 
 ## Instructions:
 You are a secret agent tasked with infiltrating the Super Secret Bank's website and extracting sensitive user information. This financial institution is rumored to be harboring valuable data on its high-profile clients, which could be leveraged for our organization's benefit.
 
 Thanks to the efforts of your agency colleagues, we've gained valuable intel on how the website operates. The table of interest in the database has the following fields:
 `id, username, name, birthday, secret, occupation, email, address, favorite_color, total_tacos_eaten`
-Moreover, the website's backend only executes a single query per request (multiple conditions are allowed), and responds with only the first result found.
+Moreover, the website's backend only executes a single query per request (multiple conditions are allowed), uses single quotes `'` in its queries, and responds with only the first result found.
 
 Your task is to inspect the HTML and JavaScript code of the website and identify opportunities for exploitation. Utilize your skills to modify the client-side code in order to craft SQL injection attacks that will allow you to retrieve the following information:
 
