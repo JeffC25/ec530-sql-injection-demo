@@ -17,6 +17,9 @@ This web application has been intentionally designed with vulnerabilities to SQL
 
 By accessing and using this web application, you agree to abide by these terms and conditions. The developers and administrators of this web application are not liable for any misuse or unauthorized activities performed by users.
 
+## Run Locally:
+This application is packaged with [Docker](https://www.docker.com/).
+
 ## Instructions:
 You are a secret agent tasked with infiltrating the Super Secret Bank's website and extracting sensitive user information. This financial institution is rumored to be harboring valuable data on its high-profile clients, which could be leveraged for our organization's benefit.
 
@@ -31,7 +34,7 @@ Your task is to inspect the HTML and JavaScript code of the website and identify
 - The name of the oldest user
 - The name of the user who owns a pet fish
 - The name of the user who works as a super villain
-- The name of the oldest user born before 1985
+- The name of the youngest user born after or during 1984
 - The names of the 2 users who secretly own a secret lab
 - The names of the 3 users whose favorite color is Yellow
 - The names of the 4 users who are confirmed to have siblings
