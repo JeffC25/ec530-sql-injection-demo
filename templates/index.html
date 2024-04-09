@@ -18,86 +18,84 @@
             .then(data => {
                 let results = document.getElementById("results");
                 results.innerHTML = "";
-                data.forEach(user => {
-                    results.innerHTML += `
-                        <div class="p-1">
-                            <div class="text-orange-500 text-sm">ID</div>
-                            <div class="text-neutral-800 ">${user.id}</div>
-                        </div>
-                        <div class="h-px bg-neutral-300 w-full"></div>
+                results.innerHTML += `
+                    <div class="p-1">
+                        <div class="text-orange-500 text-sm">ID</div>
+                        <div class="text-neutral-800 ">${data.id}</div>
+                    </div>
+                    <div class="h-px bg-neutral-300 w-full"></div>
 
-                        <div class="p-1">
-                            <div class="text-orange-500 text-sm">UserName</div>
-                            <div class="text-neutral-800 ">${user.username}</div>
-                        </div>
-                        <div class="h-px bg-neutral-300 w-full"></div>
+                    <div class="p-1">
+                        <div class="text-orange-500 text-sm">UserName</div>
+                        <div class="text-neutral-800 ">${data.username}</div>
+                    </div>
+                    <div class="h-px bg-neutral-300 w-full"></div>
 
-                        <div class="p-1">
-                            <div class="text-orange-500 text-sm">Name</div>
-                            <div class="text-neutral-800 ">${user.name}</div>
-                        </div>
-                        <div class="h-px bg-neutral-300 w-full"></div>
+                    <div class="p-1">
+                        <div class="text-orange-500 text-sm">Name</div>
+                        <div class="text-neutral-800 ">${data.name}</div>
+                    </div>
+                    <div class="h-px bg-neutral-300 w-full"></div>
 
-                        <div class="p-1">
-                            <div class="text-orange-500 text-sm">Date of Birth</div>
-                            <div class="text-neutral-800 ">${user.birthday}</div>
-                        </div>
-                        <div class="h-px bg-neutral-300 w-full"></div>
+                    <div class="p-1">
+                        <div class="text-orange-500 text-sm">Date of Birth</div>
+                        <div class="text-neutral-800 ">${data.birthday}</div>
+                    </div>
+                    <div class="h-px bg-neutral-300 w-full"></div>
 
-                        <div class="p-1">
-                            <div class="text-orange-500 text-sm">Secret</div>
-                            <div class="text-neutral-800 ">${user.secret}</div>
-                        </div>
-                        <div class="h-px bg-neutral-300 w-full"></div>
+                    <div class="p-1">
+                        <div class="text-orange-500 text-sm">Secret</div>
+                        <div class="text-neutral-800 ">${data.secret}</div>
+                    </div>
+                    <div class="h-px bg-neutral-300 w-full"></div>
 
-                        <div class="p-1">
-                            <div class="text-orange-500 text-sm">Occupation</div>
-                            <div class="text-neutral-800 ">${user.occupation}</div>
-                        </div>
-                        <div class="h-px bg-neutral-300 w-full"></div>
+                    <div class="p-1">
+                        <div class="text-orange-500 text-sm">Occupation</div>
+                        <div class="text-neutral-800 ">${data.occupation}</div>
+                    </div>
+                    <div class="h-px bg-neutral-300 w-full"></div>
 
-                        <div class="p-1">
-                            <div class="text-orange-500 text-sm">Email</div>
-                            <div class="text-neutral-800 ">${user.email}</div>
-                        </div>
-                        <div class="h-px bg-neutral-300 w-full"></div>
+                    <div class="p-1">
+                        <div class="text-orange-500 text-sm">Email</div>
+                        <div class="text-neutral-800 ">${data.email}</div>
+                    </div>
+                    <div class="h-px bg-neutral-300 w-full"></div>
 
-                        <div class="p-1">
-                            <div class="text-orange-500 text-sm">Address</div>
-                            <div class="text-neutral-800 ">${user.address}</div>
-                        </div>
-                        <div class="h-px bg-neutral-300 w-full"></div>
+                    <div class="p-1">
+                        <div class="text-orange-500 text-sm">Address</div>
+                        <div class="text-neutral-800 ">${data.address}</div>
+                    </div>
+                    <div class="h-px bg-neutral-300 w-full"></div>
 
-                        <div class="p-1">
-                            <div class="text-orange-500 text-sm">Favorite Color</div>
-                            <div class="text-neutral-800 ">${user.favorite_color}</div>
-                        </div>
-                        <div class="h-px b-pxeutral-300 w-full"></div>
+                    <div class="p-1">
+                        <div class="text-orange-500 text-sm">Favorite Color</div>
+                        <div class="text-neutral-800 ">${data.favorite_color}</div>
+                    </div>
+                    <div class="h-px b-pxeutral-300 w-full"></div>
 
-                        <!-- <div class="p-1">
-                            <div class="text-orange-500 text-sm">Hours of Sleep per Night</div>
-                            <div class="text-neutral-800 ">${user.sleep_hours_per_night}</div>
-                        </div>
-                        <div class="h-px bg-neutral-300 w-full"></div>
+                    <!-- <div class="p-1">
+                        <div class="text-orange-500 text-sm">Hours of Sleep per Night</div>
+                        <div class="text-neutral-800 ">${data.sleep_hours_per_night}</div>
+                    </div>
+                    <div class="h-px bg-neutral-300 w-full"></div>
 
-                        <div class="p-1">
-                            <div class="text-orange-500 text-sm">Hours of Exercise per Week</div>
-                            <div class="text-neutral-800 ">${user.exercise_hours_per_week}</div>
-                        </div>
-                        <div class="h-px bg-neutral-300 w-full"></div>
+                    <div class="p-1">
+                        <div class="text-orange-500 text-sm">Hours of Exercise per Week</div>
+                        <div class="text-neutral-800 ">${data.exercise_hours_per_week}</div>
+                    </div>
+                    <div class="h-px bg-neutral-300 w-full"></div>
 
-                        <div class="p-1">
-                            <div class="text-orange-500 text-sm">Total Savings (USD)</div>
-                            <div class="text-neutral-800 ">${user.savings_amount}</div>
-                        </div> -->
-                        <div class="h-px bg-neutral-300 w-full"></div>
+                    <div class="p-1">
+                        <div class="text-orange-500 text-sm">Total Savings (USD)</div>
+                        <div class="text-neutral-800 ">${data.savings_amount}</div>
+                    </div> -->
+                    <div class="h-px bg-neutral-300 w-full"></div>
 
-                        <div class="p-1">
-                            <div class="text-orange-500 text-sm">Tacos Eaten in Lifetime</div>
-                            <div class="text-neutral-800 ">${user.total_tacos_eaten}</div>
-                        </div>
-                    `;
-                });
+                    <div class="p-1">
+                        <div class="text-orange-500 text-sm">Tacos Eaten in Lifetime</div>
+                        <div class="text-neutral-800 ">${data.total_tacos_eaten}</div>
+                    </div>
+                `;
             });
         }
     </script>

@@ -7,23 +7,21 @@ class UserResource(Resource):
         parser.add_argument('username', required=True, help='User is required')
         args = parser.parse_args()
 
-        username = args['username']
-        conn = sqlite3.connect('example.db')
-        c = conn.cursor()
+        with sqlite3.connect('example.db') as conn:
+            username = args['username']
+            c = conn.cursor()
 
-        # Unsanitized query for demonstration purposes
-        query = ("SELECT * FROM users WHERE username='" + username + "';")
-        print(query)
-        c.execute(query)
-        result = c.fetchone()
-        print('')
-        print(result)
+            # Unsanitized query for demonstration purposes
+            query = ("SELECT * FROM users WHERE username='" + username + "';")
+            print(query)
+            c.execute(query)
+            result = c.fetchone()
         conn.close()
 
         if result is None:
             return {'error': 'User not found'}, 404
 
-        user = [{
+        user = {
             'id': result[0],
             'username': result[1],
             'name': result[2],
@@ -37,5 +35,5 @@ class UserResource(Resource):
             'exercise_hours_per_week': result[10],
             'savings_amount': result[11],
             'total_tacos_eaten': result[12]
-        }]
+        }
         return user
